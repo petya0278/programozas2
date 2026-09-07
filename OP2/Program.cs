@@ -4,7 +4,10 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.Title = "Üdvözlő";
+            Console.Write("Irj be egy nevet");
+            string name=Console.ReadLine();
+            Console.WriteLine($"Szia {name}"); 
         }
     }
 }
