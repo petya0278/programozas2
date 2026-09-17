@@ -27,18 +27,14 @@ else if (muvelet == "*")
 {
     szam = num1 * num2;
 }
-else if (muvelet == "/")
+else if (muvelet == "/" && num2 != 0)
 {
-    if (num2 == 0)
-        Console.WriteLine("Nullával nem osztunk");
-
     szam = num1 % num2;
-    return;
 }
 else
 {
     Console.WriteLine("Hibás muvelet");
-    return;
+    
 }
 
 Console.WriteLine($"Eredmény {szam}");
