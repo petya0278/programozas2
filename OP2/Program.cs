@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel.Design;
-
+//eldontes tetele
 
 
 Console.WriteLine("Irj be ket szamot!");
