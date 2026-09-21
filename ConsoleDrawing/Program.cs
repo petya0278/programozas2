@@ -27,6 +27,12 @@
                 for (int i = 0; i < width; i++) { 
                 Console.SetCursorPosition(i, 0);
                     Console.Write('═');
+
+                for (int j = 0; j < height; j++) 
+                { 
+                Console.SetCursorPosition(j, 0);
+                 Console.Write('╗');
+                }
                 }
             }
         }
