@@ -14,16 +14,16 @@ internal class Program
             for (int x = 0; x < width; x++)
             {
                 Console.SetCursorPosition(x, 0);
-                Console.Write("╔");
+                Console.Write("═");
                 Console.SetCursorPosition(x, height - 1);
-                Console.Write("╗");
+                Console.Write("═");
             }
             for (int y = 0; y < height; y++)
             {
                 Console.SetCursorPosition(0, y);
-                Console.Write("╝");
+                Console.Write("╔");
                 Console.SetCursorPosition(width - 1, y);
-                Console.Write("╚");
+                Console.Write("╗");
             }
             // Kezdő 
             int cursorX = 1;
