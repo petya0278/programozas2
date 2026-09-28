@@ -7,7 +7,7 @@ internal class Program
     {
         static void Main(string[] args)
         {
-            Console.CursorVisible = false;
+            Console.CursorVisible = true;
             int width = Console.WindowWidth;
             int height = Console.WindowHeight;
             // 1. Keret
@@ -21,14 +21,14 @@ internal class Program
             for (int y = 0; y < height; y++)
             {
                 Console.SetCursorPosition(0, y);
-                Console.Write("╔");
+                Console.Write("║");
                 Console.SetCursorPosition(width - 1, y);
-                Console.Write("╗");
+                Console.Write("║");
             }
             // Kezdő 
             int cursorX = 1;
             int cursorY = 1;
-            char karakter = '#';
+            char karakter = '▓';
             ConsoleColor szin = ConsoleColor.White;
             ConsoleColor hatter = ConsoleColor.Black;
             bool capsLock = false;
@@ -59,13 +59,13 @@ internal class Program
                 }
                 // 4
                 if (key.Key == ConsoleKey.F1)
-                    karakter = '#';
+                    karakter = '█';
                 if (key.Key == ConsoleKey.F2)
-                    karakter = '*';
+                    karakter = '░';
                 if (key.Key == ConsoleKey.F3)
-                    karakter = '+';
+                    karakter = '▒';
                 if (key.Key == ConsoleKey.F4)
-                    karakter = '@';
+                    karakter = '▓';
                 // 5. 
                 if (key.Key == ConsoleKey.D1)
                     szin = ConsoleColor.White;
@@ -110,7 +110,7 @@ internal class Program
                     Console.SetCursorPosition(cursorX, cursorY);
                     Console.BackgroundColor = ConsoleColor.Black;
                     Console.ForegroundColor = ConsoleColor.White;
-                    Console.Write(" ");
+                    Console.Write("-");
                 }
                 
                 // Kurzor megjelenítése
